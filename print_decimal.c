@@ -17,7 +17,7 @@ int print_decimal(va_list pfList)
 	{
 		number *= -1;
 		_putchar('-');
-		count++;
+		sum++;
 	}
 	while ((number / x) > 9)
 		x *= 10;
@@ -25,7 +25,7 @@ int print_decimal(va_list pfList)
 	{
 		_putchar('0' + ((number / x) % 10));
 		x /= 10;
-		count++;
+		sum++;
 	}
-	return (count);
+	return (sum);
 }

@@ -1,6 +1,10 @@
 #include "main.h"
 
-
+/**
+ * _printf - function that produces output according to a format
+ * @format: character string
+ * Return: number of characters printed excluding null bytes
+ */
 int _printf(char const *format, ...)
 {
 	int sum = 0;
