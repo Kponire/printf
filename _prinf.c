@@ -19,7 +19,7 @@ int _printf(char const *format, ...)
 			if (*format == '\0')
 				return (-1);
 			parameter = converter(*format);
-			sum += parameter;
+			sum += parameter(pfList);
 		}
 		else
 		{

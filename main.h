@@ -21,6 +21,7 @@ int (*converter(char pf))(va_list);
 int _putchar(char c);
 int print_chr(va_list pfList);
 int print_str(va_list pfList);
+int print_percent(__attribute__((unused))va_list param);
 int print_int(va_list pfList);
 int print_decimal(va_list pfList);
 
