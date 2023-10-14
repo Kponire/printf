@@ -9,11 +9,11 @@
 
 int print_decimal(va_list pfList)
 {
-	int number;
+	unsigned int number;
 	int sum = 0, x = 1;
 
 	number = va_arg(pfList, int);
-	if (number < 0)
+	if ((int)number < 0)
 	{
 		number *= -1;
 		_putchar('-');
