@@ -23,6 +23,7 @@ int print_decimal(va_list pfList)
 		number++;
 	while ((number / x) > 9)
 		x *= 10;
+	number--;
 	while (x >= 1)
 	{
 		_putchar('0' + ((number / x) % 10));
