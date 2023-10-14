@@ -11,7 +11,7 @@ int _printf(char const *format, ...)
 		return (-1);
 	va_start(pfList, format);
 
-	whille (*format != '\0')
+	while (*format != '\0')
 	{
 		if (*format == '%')
 		{
