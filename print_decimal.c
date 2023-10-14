@@ -12,7 +12,7 @@ int print_decimal(va_list pfList)
 	unsigned int number;
 	int sum = 0, x = 1;
 
-	number = va_arg(pfList, int);
+	number = va_arg(pfList, long);
 	if ((int)number < 0)
 	{
 		number *= -1;
