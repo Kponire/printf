@@ -15,7 +15,7 @@ int print_str(va_list pfList)
 	str = va_arg(pfList, char *);
 	if (str == NULL)
 		str = "(nil)";
-	for (; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
 	}

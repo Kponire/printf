@@ -2,6 +2,8 @@
 #define PRINTF_H
 #include <stdarg.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * struct print - a function that compares the operation with the
