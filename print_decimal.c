@@ -9,7 +9,7 @@
 
 int print_decimal(va_list pfList)
 {
-	int number;
+	unsigned int number;
 	int sum = 0, x = 1;
 
 	number = va_arg(pfList, int);
@@ -19,11 +19,8 @@ int print_decimal(va_list pfList)
 		_putchar('-');
 		sum++;
 	}
-	if (number == INT_MIN)
-		number++;
 	while ((number / x) > 9)
 		x *= 10;
-	number--;
 	while (x >= 1)
 	{
 		_putchar('0' + ((number / x) % 10));
