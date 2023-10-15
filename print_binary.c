@@ -8,7 +8,7 @@
 
 int print_binary(va_list pfList)
 {
-	unsigned int i, j, k;
+	int i, j, k;
 	unsigned int number, size;
 	char *len;
 
@@ -33,10 +33,10 @@ int print_binary(va_list pfList)
 		len[j] = number % 2;
 		number = number / 2;
 	}
-	for (k = (j - 1); k > 0; k--)
+	for (k = (j - 1); k >= 0; k--)
 	{
 		_putchar('0' + len[k]);
 	}
 	free(len);
-	return (i + 1);
+	return (i);
 }

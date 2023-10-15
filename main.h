@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <stddef.h>
 
 /**
  * struct print - a function that compares the operation with the
