@@ -21,7 +21,6 @@ int print_binary(va_list pfList)
 	}
 
 	size = number;
-
 	for (i = 0; size > 0; i++)
 	{
 		size = size / 2;
@@ -34,7 +33,7 @@ int print_binary(va_list pfList)
 		len[j] = number % 2;
 		number = number / 2;
 	}
-	for (k = (j - 1); k >= 0; k--)
+	for (k = (j - 1); k > 0; k--)
 	{
 		_putchar('0' + len[k]);
 	}

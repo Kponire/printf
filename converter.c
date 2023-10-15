@@ -15,6 +15,7 @@ int (*converter(char pf))(va_list)
 		{'i', print_int},
 		{'d', print_decimal},
 		{'%', print_percent},
+		{'b', print_binary},
 		{'\0', NULL},
 	};
 
@@ -27,4 +28,3 @@ int (*converter(char pf))(va_list)
 	}
 	return (print_types[i].execute);
 }
-
