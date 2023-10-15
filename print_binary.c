@@ -38,5 +38,5 @@ int print_binary(va_list pfList)
 		_putchar('0' + len[k]);
 	}
 	free(len);
-	return (i);
+	return (i + 1);
 }
