@@ -45,8 +45,6 @@ int print_hxd(va_list pfList)
 }
 
 
-#include "main.h"
-
 /**
  * print_HXD - function that converts integer to hexadecimal
  * @pfList: the argment in the va_list
