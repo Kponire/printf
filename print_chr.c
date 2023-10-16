@@ -11,7 +11,7 @@ int print_chr(va_list pfList)
 {
 	char character;
 
-	character = va_arg(pfList, int);
+	character = (char)va_arg(pfList, int);
 	_putchar(character);
 	return (1);
 }
