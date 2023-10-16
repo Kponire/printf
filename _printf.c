@@ -23,7 +23,14 @@ int _printf(char const *format, ...)
 			if (*format == '\0')
 				return (-1);
 			parameter = converter(*format);
-			sum += parameter(pfList);
+			if (parameter == NULL)
+			{
+				_putchar('%');
+				_putchar(*format);
+				sum += 2;
+			}
+			else
+				sum += parameter(pfList);
 		}
 		else
 		{
