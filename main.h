@@ -30,5 +30,8 @@ int print_int(va_list pfList);
 int print_decimal(va_list pfList);
 int print_binary(va_list pfList);
 int print_octal(va_list pfList);
+int print_unsigned(va_list pfList);
+int print_hxd(va_list pfList);
+int print_HXD(va_list pfList);
 
 #endif

@@ -17,6 +17,9 @@ int (*converter(char pf))(va_list)
 		{'%', print_percent},
 		{'b', print_binary},
 		{'o', print_octal},
+		{'u', print_unsigned},
+		{'x', print_hxd},
+		{'X', print_HXD},
 		{'\0', NULL},
 	};
 
