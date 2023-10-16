@@ -29,5 +29,6 @@ int print_percent(__attribute__((unused))va_list pfList);
 int print_int(va_list pfList);
 int print_decimal(va_list pfList);
 int print_binary(va_list pfList);
+int print_octal(va_list pfList);
 
 #endif

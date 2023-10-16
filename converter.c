@@ -16,6 +16,7 @@ int (*converter(char pf))(va_list)
 		{'d', print_decimal},
 		{'%', print_percent},
 		{'b', print_binary},
+		{'o', print_octal},
 		{'\0', NULL},
 	};
 
