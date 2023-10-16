@@ -20,6 +20,7 @@ int (*converter(char pf))(va_list)
 		{'u', print_unsigned},
 		{'x', print_hxd},
 		{'X', print_HXD},
+		{'p', print_address},
 		{'\0', NULL},
 	};
 
