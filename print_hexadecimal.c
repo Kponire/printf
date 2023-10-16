@@ -38,7 +38,7 @@ int print_hxd(va_list pfList)
 	}
 	for (k = (j - 1); k >= 0; k--)
 	{
-		_putchar('0' + len[k]);
+		_putchar(len[k]);
 	}
 	free(len);
 	return (i);
@@ -83,7 +83,7 @@ int print_HXD(va_list pfList)
 	}
 	for (k = (j - 1); k >= 0; k--)
 	{
-		_putchar('0' + len[k]);
+		_putchar(len[k]);
 	}
 	free(len);
 	return (i);
