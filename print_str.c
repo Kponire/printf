@@ -19,5 +19,5 @@ int print_str(va_list pfList)
 	{
 		_putchar(str[i]);
 	}
-	return (i);
+	return (i - 1);
 }
