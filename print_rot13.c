@@ -15,7 +15,7 @@ int print_rot13(va_list pfList)
 	char *s;
 
 	s = va_arg(pfList, char *);
-	if (!s)
+	if (s == NULL)
 		s = "(null)";
 	while (s[i] != '\0')
 	{
@@ -23,12 +23,16 @@ int print_rot13(va_list pfList)
 		{
 			if (s[i] == alphabet[j])
 			{
-				s[i] = rot13[j];
+				_putchar(rot13[j]);
+				i++;
 				break;
 			}
 		}
-		_putchar(s[i]);
-		i++;
+		if (!alphabet[j])
+		{
+			_putchar(s[i]);
+			i++;
+		}
 	}
 	return (i);
 }
