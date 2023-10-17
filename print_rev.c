@@ -3,8 +3,8 @@
 
 /**
  * rev_string - Reverses a string
- * @s: The string to be modified
- * Return: void
+ * @pfList: the argument in the va_list
+ * Return: the length of the string
  */
 
 int rev_string(va_list pfList)
@@ -12,7 +12,6 @@ int rev_string(va_list pfList)
 
 	int length = 0, i = 0;
 	char *s;
-	char str;
 
 	s = va_arg(pfList, char *);
 	if (s == NULL)
@@ -23,7 +22,7 @@ int rev_string(va_list pfList)
 	{
 		length++;
 	}
-	while (; length > 0; length--)
+	for (; length >= 0; length--)
 	{
 		_putchar(s[length]);
 		i++;
