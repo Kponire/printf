@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * rot13 - function that encodes a string using rot13.
+ * print_rot13 - function that encodes a string using rot13.
  * @pfList: the input string
  * Return: the encoded string
  */
