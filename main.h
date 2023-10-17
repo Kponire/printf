@@ -35,5 +35,6 @@ int print_unsigned(va_list pfList);
 int print_hxd(va_list pfList);
 int print_HXD(va_list pfList);
 int print_address(va_list pfList);
+int print_rot13(va_list pfList);
 
 #endif
