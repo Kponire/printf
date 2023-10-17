@@ -12,11 +12,11 @@ int print_rot13(va_list pfList)
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	int i = 0;
 	int j;
-	char *str;
+	char *s;
 
-	str = va_arg(pfList, char *);
-	if (str == NULL)
-		str = "(null)";
+	s = va_arg(pfList, char *);
+	if (s == NULL)
+		s = "(null)";
 	while (s[i] != '\0')
 	{
 		for (j = 0; j < 52; j++)
