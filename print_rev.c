@@ -19,6 +19,17 @@ int rev_string(va_list pfList)
 	{
 		s = "(null)";
 	}
+	while (s[length] != '\0')
+	{
+		length++;
+	}
+	while (i < length--)
+	{
+		str = s[i];
+		s[i++] = s[length];
+		s[length] = str;
+	}
+/**
 	while (s[index++])
 	len++;
 
@@ -28,5 +39,6 @@ int rev_string(va_list pfList)
 	s[index] = s[len - index - 1];
 	s[len - index - 1] = tmp;
 	}
-	return (len - 1);
+*/
+	return (i);
 }
