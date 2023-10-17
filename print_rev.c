@@ -28,4 +28,5 @@ int rev_string(va_list pfList)
 	s[index] = s[len - index - 1];
 	s[len - index - 1] = tmp;
 	}
+	return (len - 1);
 }
