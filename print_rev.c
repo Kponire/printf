@@ -17,28 +17,16 @@ int rev_string(va_list pfList)
 	s = va_arg(pfList, char *);
 	if (s == NULL)
 	{
-		s = "(null)";
+		s = ")llun(";
 	}
 	while (s[length] != '\0')
 	{
 		length++;
 	}
-	while (i < length--)
+	while (; length > 0; length--)
 	{
-		str = s[i];
-		s[i++] = s[length];
-		s[length] = str;
+		_putchar(s[length]);
+		i++;
 	}
-/**
-	while (s[index++])
-	len++;
-
-	for (index = len - 1; index >= len / 2; index--)
-	{
-	tmp = s[index];
-	s[index] = s[len - index - 1];
-	s[len - index - 1] = tmp;
-	}
-*/
 	return (i);
 }
