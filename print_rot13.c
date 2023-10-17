@@ -15,7 +15,7 @@ int print_rot13(va_list pfList)
 	char *s;
 
 	s = va_arg(pfList, char *);
-	if (s == NULL)
+	if (!s)
 		s = "(null)";
 	while (s[i] != '\0')
 	{
