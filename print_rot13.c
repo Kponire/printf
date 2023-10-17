@@ -24,10 +24,10 @@ int print_rot13(va_list pfList)
 			if (s[i] == alphabet[j])
 			{
 				s[i] = rot13[j];
-				_putchar(s[i]);
 				break;
 			}
 		}
+		_putchar(s[i]);
 		i++;
 	}
 	return (i);
