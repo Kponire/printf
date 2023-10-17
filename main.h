@@ -23,6 +23,7 @@ typedef struct print
 int _printf(char const *format, ...);
 int (*converter(char pf))(va_list);
 int _putchar(char c);
+int rev_string(va_list pfList);
 int print_chr(va_list pfList);
 int print_str(va_list pfList);
 int print_percent(__attribute__((unused))va_list pfList);

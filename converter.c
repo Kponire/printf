@@ -21,6 +21,7 @@ int (*converter(char pf))(va_list)
 		{'x', print_hxd},
 		{'X', print_HXD},
 		{'p', print_address},
+		{'r', rev_string},
 		{'\0', NULL},
 	};
 
