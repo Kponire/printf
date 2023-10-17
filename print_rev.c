@@ -10,8 +10,9 @@
 int rev_string(va_list pfList)
 {
 
-	int len = 0, index = 0;
-	char tmp;
+	//int len = 0, index = 0;
+	//char tmp;
+	int length = 0, i = 0;
 	char *s;
 
 	s = va_arg(pfList, char *);
