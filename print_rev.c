@@ -22,6 +22,7 @@ int rev_string(va_list pfList)
 	{
 		length++;
 	}
+	length--;
 	for (; length >= 0; length--)
 	{
 		_putchar(s[length]);
