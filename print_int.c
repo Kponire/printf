@@ -9,13 +9,13 @@
 
 int print_int(va_list pfList)
 {
-	long number;
+	unsigned int number;
 	int sum = 0, x = 1;
 
 	number = va_arg(pfList, int);
-	if (number < 0)
+	if ((int)number < 0)
 	{
-		number = -number;
+		number *= -1;
 		putchar('-');
 		sum++;
 	}

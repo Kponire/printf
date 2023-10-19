@@ -12,7 +12,7 @@ int (*converter(char pf))(va_list)
 	print_f print_types[] = {
 		{'c', print_chr},
 		{'s', print_str},
-		{'i', print_int},
+		{'i', print_decimal},
 		{'d', print_decimal},
 		{'%', print_percent},
 		{'b', print_binary},
