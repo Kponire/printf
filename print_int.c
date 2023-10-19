@@ -9,7 +9,7 @@
 
 int print_int(va_list pfList)
 {
-	unsigned int number;
+	int number;
 	int sum = 0, x = 1;
 
 	number = va_arg(pfList, int);
