@@ -16,7 +16,6 @@ int print_address(va_list pfList)
 	char *str = "(nil)";
 
 	j = va_arg(pfList, unsigned long);
-
 	if (j == 0)
 	{
 		for (i = 0; str[i]; i++)
@@ -26,7 +25,6 @@ int print_address(va_list pfList)
 		}
 		return (count);
 	}
-
 	_putchar('0');
 	_putchar('x');
 	count = 2;
